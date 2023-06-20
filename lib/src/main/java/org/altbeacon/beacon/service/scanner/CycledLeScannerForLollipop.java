@@ -200,7 +200,7 @@ public class CycledLeScannerForLollipop extends CycledLeScanner {
 //                    filters = new ScanFilterUtils().createScanFiltersForBeaconParsers(
 //                            mBeaconManager.getBeaconParsers());
 //                }
-                else {
+                //else {
 //                    if (Build.MANUFACTURER.equalsIgnoreCase("samsung")) {
 //                        LogManager.d(TAG, "Using a wildcard scan filter on Samsung because the screen is on.  We will switch to a non-empty filter if the screen goes off");
 //                        // if this is samsung, as soon as the screen goes off we will need to start a different scan
@@ -213,7 +213,7 @@ public class CycledLeScannerForLollipop extends CycledLeScanner {
 //                    }
                     // The wildcard filter matches everything.
                     filters = new ScanFilterUtils().createWildcardScanFilters();
-                }
+                //}
             }
             else {
                 LogManager.d(TAG, "Using no scan filter since this is pre-8.1");
