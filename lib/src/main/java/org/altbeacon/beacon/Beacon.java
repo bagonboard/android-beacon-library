@@ -690,6 +690,7 @@ public class Beacon implements Parcelable, Serializable {
     private StringBuilder toStringBuilder() {
         final StringBuilder sb = new StringBuilder();
         int i = 1;
+        sb.append(mBluetoothAddress+"_");
         for (Identifier identifier: mIdentifiers) {
             if (i > 1) {
                 sb.append(" ");
